@@ -35,14 +35,14 @@ const UserLogin = () => {
     }
 
     return (
-        <div className='p-7 h-screen flex flex-col justify-between'>
+        <div className='flex flex-col justify-between h-screen p-7'>
             <div>
                 <img className='w-16 mb-10' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYQy-OIkA6In0fTvVwZADPmFFibjmszu2A0g&s" alt="" />
 
                 <form onSubmit={(e) => {
                     submitHandler(e)
                 }}>
-                    <h3 className='text-lg font-medium mb-2'>What's your email</h3>
+                    <h3 className='mb-2 text-lg font-medium'>What's your email</h3>
                     <input
                         required
                         value={email}
@@ -54,7 +54,7 @@ const UserLogin = () => {
                         placeholder='email@example.com'
                     />
 
-                    <h3 className='text-lg font-medium mb-2'>Enter Password</h3>
+                    <h3 className='mb-2 text-lg font-medium'>Enter Password</h3>
 
                     <input
                         className='bg-[#eeeeee] mb-7 rounded-lg px-4 py-2 border w-full text-lg placeholder:text-base'

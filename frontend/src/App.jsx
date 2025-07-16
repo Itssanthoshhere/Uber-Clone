@@ -9,10 +9,10 @@ import Home from './pages/Home'
 import UserProtectWrapper from './pages/UserProtectWrapper'
 import UserLogout from './pages/UserLogout'
 import CaptainHome from './pages/CaptainHome'
-// import CaptainProtectWrapper from './pages/CaptainProtectWrapper'
-// import CaptainLogout from './pages/CaptainLogout'
+import CaptainProtectWrapper from './pages/CaptainProtectWrapper'
+import CaptainLogout from './pages/CaptainLogout'
 import Riding from './pages/Riding'
-// import CaptainRiding from './pages/CaptainRiding'
+import CaptainRiding from './pages/CaptainRiding'
 import 'remixicon/fonts/remixicon.css'
 
 const App = () => {
@@ -40,16 +40,16 @@ const App = () => {
           </UserProtectWrapper>
           } />
         <Route path='/captain-home' element={
-          // <CaptainProtectWrapper>
+          <CaptainProtectWrapper>
             <CaptainHome />
-  
+          </CaptainProtectWrapper>
 
         } />
-        {/* <Route path='/captain/logout' element={
+        <Route path='/captain/logout' element={
           <CaptainProtectWrapper>
             <CaptainLogout />
           </CaptainProtectWrapper>
-        } /> */}
+        } />
       </Routes>
     </div>
   )

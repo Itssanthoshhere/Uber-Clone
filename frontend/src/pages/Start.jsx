@@ -6,8 +6,8 @@ const Start = () => {
     return (
         <div>
             <div
-                className="bg-cover bg-center h-screen pt-8 flex justify-between flex-col w-full"
-               a style={{
+                className="flex flex-col justify-between w-full h-screen pt-8 bg-center bg-cover"
+                a style={{
                     backgroundImage: `url('https://images.unsplash.com/photo-1527603815363-e79385e0747e?w=1600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8dHJhZmZpYyUyMGxpZ2h0fGVufDB8fDB8fHww')`,
                 }}
             >
@@ -16,16 +16,13 @@ const Start = () => {
                     src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Uber_logo_2018.png"
                     alt="Uber logo"
                 />
-                <div className="bg-white pb-7 py-4 px-4">
-                    <h2 className="text-[30px] font-bold">Get Started with Uber</h2>
-                    <Link to='/login' className="flex items-center justify-center w-full bg-black text-white py-3 rounded-lg mt-5">Continue</Link>
+                <div className='px-4 py-4 pb-8 bg-white'>
+                    <h2 className='text-[30px] font-semibold'>Get Started with Uber</h2>
+                    <Link to='/login' className='flex items-center justify-center w-full py-3 mt-5 text-white bg-black rounded-lg'>Continue</Link>
                 </div>
             </div>
         </div>
-    );
-};
+    )
+}
 
-export default Start;
-
-
-
+export default Start
